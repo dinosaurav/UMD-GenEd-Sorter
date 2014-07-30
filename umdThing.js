@@ -16,8 +16,21 @@ function evaluateTable(array, queryGenEds){
 }
 
 function sortTable(array){
+	var selection = document.getElementById("genEdSelector").value;
 	return array.sort(function (a,b) {
-		return a.genEds.length-b.genEds.length;
+		var aCheck = 0;
+		var bCheck = 0;
+		for (var i=0;i<a.genEds.length;i++){
+			if (a.genEds[i] === selection) {
+				aCheck++;
+			}
+		}
+		for (var i=0;i<b.genEds.length;i++){
+			if (b.genEds[i] === selection) {
+				bCheck++;
+			}
+		}
+		return aCheck*10 - bCheck*10 + a.genEds.length - b.genEds.length;
 	})
 }
 
