@@ -1,18 +1,9 @@
-function onLoad(){
+function loadTable(){
 	writeTable(sortTable(getTable()));
-	return false;
-}
-
-function popup(){
-	alert("Hello World")
 }
 
 function readTable(){
 	var table = JSON.parse(tableString);
-}
-
-function evaluateTable(array, queryGenEds){
-	array
 }
 
 function sortTable(array){

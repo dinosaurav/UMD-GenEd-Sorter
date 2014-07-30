@@ -1,13 +1,18 @@
 <html>
 <head>
-	<title>THE SASS PRESENT IN THIS TITLE IS STILL STRESS RELIEF</title>
+	<title>UMD Gen Eds Sorter</title>
 	<link rel="stylesheet" type="text/css" href="umdThing.css">
 	<script type="text/javascript" src="umdThing.js"></script>
 	</head>
-<body onload="onLoad()">
+<body onload="loadTable()">
 	<div id="content" class="center">
 		<div id="filterDiv">
-			<div id="genEdFilterDiv" class="filterSection">
+			<div id="informationDiv">
+				<p><h1>Gen Ed Course Sorter</h3>
+					<h3>Made by <a href="https://github.com/dinosaurav">Saurav Das</a></h6>
+					<a href="http://www.gened.umd.edu/">Gen Ed Information</a>
+					<a href="https://ntst.umd.edu/soc/">UMD's schedule site</a></p>
+			</div><div id="genEdFilterDiv" class="filterSection">
 					<div class="selector">
 						<select id="genEdSelector">
 						<option value="default">Select GenEds</option>
@@ -26,19 +31,16 @@
 						<option value="SCIS">SCIS</option>
 						</select>
 					</div>
-					<button onclick = "onLoad()"> Resort </button>
+					<button onclick = "loadTable()"> Sort </button>
 			</div>
 		</div>
 		<div id="tableDiv">
 			<table id="courses">
-				<tr>
-					<th class="dept">Department</th>
-					<th class="courseNum">Course Number</th>
-					<th class="courseTitle">Title</th>
-					<th class="creds">Credits</th>
-					<th class="genEds">Gen Eds</th>
-				</tr>
+				<td>ENABLE JS TO USE THIS</td>
 			</table>
+		</div>
+		<div id="footer">
+			Made by <a href="https://github.com/dinosaurav">Saurav Das</a>
 		</div>
 	</div>
 </body>
